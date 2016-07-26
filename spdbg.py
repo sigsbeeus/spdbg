@@ -64,6 +64,7 @@ def handle_console(cdata, sp):
     sp.write(cdata)
 
 def main(args):
+    global SPOPEN
     # name = '/dev/tty.usbserial-FTF86JDH'
     name = '/dev/tty.usbserial-' + args.port
     print('serial port is <%s>' % name)
